@@ -1,6 +1,6 @@
-package com.alura.finance_ai.repository;
+package com.alura.finance_ai.auth.repository;
 
-import com.alura.finance_ai.model.User;
+import com.alura.finance_ai.auth.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.alura.finance_ai.model;
+package com.alura.finance_ai.auth.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
