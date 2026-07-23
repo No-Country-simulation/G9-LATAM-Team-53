@@ -1,6 +1,7 @@
 package com.alura.finance_ai.auth.service;
 
 import com.alura.finance_ai.auth.dto.AuthResponse;
+import com.alura.finance_ai.auth.dto.LoginRequest;
 import com.alura.finance_ai.auth.dto.RegisterRequest;
 import com.alura.finance_ai.auth.model.User;
 import com.alura.finance_ai.auth.repository.UserRepository;
@@ -21,6 +22,7 @@ public class AuthService {
         this.jwtUtil = jwtUtil;
     }
 
+    // Registro
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.findByEmail(request.email()).isPresent()) {
             throw new RuntimeException("El email ya se encuentra registrado");
@@ -42,6 +44,26 @@ public class AuthService {
                 savedUser.getNombre(),
                 savedUser.getApellido(),
                 savedUser.getEmail()
+        );
+    }
+
+    //Login
+    public AuthResponse login(LoginRequest request) {
+        User user = userRepository.findByEmail(request.email())
+                .orElseThrow(() -> new RuntimeException("Credenciales invalidas:: email no encontado"));
+
+        if (!passwordEncoder.matches(request.contrasena(), user.getContrasena())) {
+            throw new RuntimeException("Credenciales invalidas: contraseña incorrecta");
+        }
+
+        String token = jwtUtil.generateToken(user.getEmail());
+
+        return new AuthResponse(
+                token,
+                user.getId(),
+                user.getNombre(),
+                user.getApellido(),
+                user.getEmail()
         );
     }
 }
