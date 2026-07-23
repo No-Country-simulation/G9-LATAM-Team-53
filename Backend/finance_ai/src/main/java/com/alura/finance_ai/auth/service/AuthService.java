@@ -3,7 +3,9 @@ package com.alura.finance_ai.auth.service;
 import com.alura.finance_ai.auth.dto.AuthResponse;
 import com.alura.finance_ai.auth.dto.LoginRequest;
 import com.alura.finance_ai.auth.dto.RegisterRequest;
+import com.alura.finance_ai.auth.model.TokenInvalido;
 import com.alura.finance_ai.auth.model.User;
+import com.alura.finance_ai.auth.repository.TokenInvalidoRepository;
 import com.alura.finance_ai.auth.repository.UserRepository;
 import com.alura.finance_ai.auth.security.JwtUtil;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -13,11 +15,16 @@ import org.springframework.stereotype.Service;
 public class AuthService {
 
     private final UserRepository userRepository;
+    private final TokenInvalidoRepository tokenInvalidoRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
 
-    public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtUtil jwtUtil) {
+    public AuthService(UserRepository userRepository,
+                       TokenInvalidoRepository tokenInvalidoRepository,
+                       PasswordEncoder passwordEncoder,
+                       JwtUtil jwtUtil) {
         this.userRepository = userRepository;
+        this.tokenInvalidoRepository = tokenInvalidoRepository;
         this.passwordEncoder = passwordEncoder;
         this.jwtUtil = jwtUtil;
     }
@@ -65,5 +72,10 @@ public class AuthService {
                 user.getApellido(),
                 user.getEmail()
         );
+    }
+
+    // Logout
+    public void logout(String token) {
+        tokenInvalidoRepository.save(TokenInvalido.of(token));
     }
 }
