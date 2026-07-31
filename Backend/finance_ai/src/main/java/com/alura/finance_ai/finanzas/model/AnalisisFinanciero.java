@@ -1,11 +1,13 @@
 package com.alura.finance_ai.finanzas.model;
 
+import com.alura.finance_ai.auth.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -37,4 +39,12 @@ public class AnalisisFinanciero {
     @CollectionTable(name = "recomendaciones", joinColumns = @JoinColumn(name = "analisis_id"))
     @Column(name = "recomendacion")
     private List<String> recomendaciones;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User usuario;
+
+    @OneToMany(mappedBy = "analisisFinanciero", cascade = CascadeType.ALL)
+    @Builder.Default
+    private List<Transaccion> transacciones = new ArrayList<>();
 }
