@@ -1,0 +1,45 @@
+🔐 Autenticación
+POST /auth/register
+Función: Registrar un nuevo usuario.
+
+Body (JSON):
+{
+  "nombre": "Facundo",
+  "apellido": "Ejemplo",
+  "email": "facundo@example.com",
+  "contrasena": "password123"
+}
+Respuesta (201 Created):
+{
+  "token": "jwt_generado",
+  "id": 1,
+  "nombre": "Facundo",
+  "apellido": "Ejemplo",
+  "email": "facundo@example.com"
+}
+
+POST /auth/login
+Función: Iniciar sesión y obtener JWT.
+
+Body (JSON):
+{
+  "email": "facundo@example.com",
+  "contrasena": "password123"
+}
+Respuesta (200 OK):
+{
+  "token": "jwt_generado",
+  "id": 1,
+  "nombre": "Facundo",
+  "apellido": "Ejemplo",
+  "email": "facundo@example.com"
+}
+
+POST /auth/logout
+Función: Invalidar el token actual.
+
+Headers:
+
+Authorization: Bearer jwt_generado
+
+Respuesta (204 No Content): sin cuerpo.
