@@ -1,0 +1,19 @@
+# Entorno virtual
+apifinanc/
+venv/
+env/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variables de entorno (si llegas a usar contraseñas de OCI en el futuro)
+.env
+
+# Modelos y Datos
+# Nota: Si tu archivo .pkl pesa más de 50MB-100MB, quítale el '#' a la línea de abajo 
+# para ignorarlo y súbelo manualmente a OCI Object Storage. Si pesa poco, déjalo así.
+# *.pkl
+*.csv
