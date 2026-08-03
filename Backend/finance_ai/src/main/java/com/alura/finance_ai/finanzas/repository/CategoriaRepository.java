@@ -1,6 +1,7 @@
 package com.alura.finance_ai.finanzas.repository;
 
-import com.alura.finance_ai.finanzas.entity.Categoria;
+
+import com.alura.finance_ai.finanzas.model.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.alura.finance_ai.finanzas.controller;
 
-import com.alura.finance_ai.finanzas.entity.Categoria;
+import com.alura.finance_ai.finanzas.model.Categoria;
 import com.alura.finance_ai.finanzas.service.CategoriaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

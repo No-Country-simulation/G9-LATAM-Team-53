@@ -1,4 +1,4 @@
-package com.alura.finance_ai.finanzas.entity;
+package com.alura.finance_ai.finanzas.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
