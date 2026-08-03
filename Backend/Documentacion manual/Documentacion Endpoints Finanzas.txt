@@ -1,0 +1,26 @@
+Endpoint: POST /transaccion
+URL:
+http://localhost:8080/transaccion
+
+Headers:
+
+Authorization: Bearer <jwt_token> (obtenido del login)
+
+Body (JSON válido)
+{
+  "descripcion": "Supermercado",
+  "valor": 420.50,
+  "categoria": "Alimentacion",
+  "fecha": "2026-08-03"
+}
+Respuesta obtenida(201 Created)
+{
+  "id": 1,
+  "descripcion": "Supermercado",
+  "valor": 420.50,
+  "categoria": "Alimentacion",
+  "fecha": "2026-08-03",
+  "mensaje": "Transacción registrada correctamente"
+}
+
+Proximamente no se enviara categoria en el request y se asignara mediante el modelo dentro de la logica de transaccionService
