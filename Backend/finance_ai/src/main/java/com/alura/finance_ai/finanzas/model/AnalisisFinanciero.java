@@ -25,7 +25,8 @@ public class AnalisisFinanciero {
 
     //Debatir si hacer un ENUM  de tres opciones (Saludable/En observacion/En riesgo)
     // o recibir el String directo
-    private String perfilFinanciero;
+    @Enumerated(EnumType.STRING)
+    private PerfilFinanciero perfilFinanciero;
 
     private Double probabilidad;
 
