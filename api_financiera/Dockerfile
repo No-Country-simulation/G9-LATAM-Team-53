@@ -1,20 +1,23 @@
-# 1. Usar una imagen oficial de Python ligera
+# Usamos una imagen oficial de Python ligera
 FROM python:3.12-slim
 
-# 2. Establecer el directorio de trabajo dentro del contenedor
+# Directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# 3. Copiar solo el archivo de requerimientos primero (para optimizar caché)
+# Copiamos primero los requirements para aprovechar el caché de Docker
 COPY requirements.txt .
 
-# 4. Instalar las dependencias de Python
+# Instalamos las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Copiar el resto del código y el modelo (.pkl) a la carpeta /app
+# Descargamos los recursos necesarios de NLTK dentro de la imagen del contenedor
+RUN python -m nltk.downloader stopwords
+
+# Copiamos el resto de los archivos del proyecto (el main.py y el .pkl)
 COPY . .
 
-# 6. Exponer el puerto que usará FastAPI
+# Exponemos el puerto que usa FastAPI
 EXPOSE 8000
 
-# 7. Comando para iniciar el servidor cuando el contenedor se encienda
+# Comando para arrancar la API cuando el contenedor inicie
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
