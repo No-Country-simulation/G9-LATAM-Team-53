@@ -29,7 +29,6 @@ public class AuthService {
         this.jwtUtil = jwtUtil;
     }
 
-    // Registro
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.findByEmail(request.email()).isPresent()) {
             throw new RuntimeException("El email ya se encuentra registrado");
@@ -39,42 +38,39 @@ public class AuthService {
         user.setNombre(request.nombre());
         user.setApellido(request.apellido());
         user.setEmail(request.email());
-        user.setContrasena(passwordEncoder.encode(request.contrasena()));
+        user.setPasswordHash(passwordEncoder.encode(request.contrasena()));
 
         User savedUser = userRepository.save(user);
-
         String token = jwtUtil.generateToken(savedUser.getEmail());
 
         return new AuthResponse(
                 token,
-                savedUser.getId(),
+                savedUser.getUserId(),
                 savedUser.getNombre(),
                 savedUser.getApellido(),
                 savedUser.getEmail()
         );
     }
 
-    //Login
     public AuthResponse login(LoginRequest request) {
         User user = userRepository.findByEmail(request.email())
                 .orElseThrow(() -> new RuntimeException("Credenciales invalidas:: email no encontado"));
 
-        if (!passwordEncoder.matches(request.contrasena(), user.getContrasena())) {
-            throw new RuntimeException("Credenciales invalidas: contraseña incorrecta");
+        if (!passwordEncoder.matches(request.contrasena(), user.getPasswordHash())) {
+            throw new RuntimeException("Credenciales invalidas: contrasena incorrecta");
         }
 
         String token = jwtUtil.generateToken(user.getEmail());
 
         return new AuthResponse(
                 token,
-                user.getId(),
+                user.getUserId(),
                 user.getNombre(),
                 user.getApellido(),
                 user.getEmail()
         );
     }
 
-    // Logout
     public void logout(String token) {
         tokenInvalidoRepository.save(TokenInvalido.of(token));
     }
