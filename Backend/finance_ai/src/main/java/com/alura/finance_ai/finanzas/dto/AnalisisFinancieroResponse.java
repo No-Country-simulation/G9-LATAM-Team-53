@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 public record AnalisisFinancieroResponse(
-        String perfil_financiero,
+        String perfilFinanciero,
         Double probabilidad,
-        Map<String, Double> resumen_gastos,
+        Map<String, Double> resumenGastos,
         List<String> recomendaciones
-) {}
-
+) {
+}

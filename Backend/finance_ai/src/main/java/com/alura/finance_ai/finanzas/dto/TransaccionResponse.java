@@ -4,10 +4,12 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public record TransaccionResponse(
-        Long id,
+        Long idTransaccion,
         String descripcion,
         BigDecimal valor,
-        String categoria,
+        Long categoriaId,
+        String categoriaNombre,
         LocalDate fecha,
         String mensaje
-) {}
+) {
+}
