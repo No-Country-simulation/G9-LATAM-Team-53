@@ -23,9 +23,8 @@ public class AnalisisFinanciero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //Debatir si hacer un ENUM  de tres opciones (Saludable/En observacion/En riesgo)
-    // o recibir el String directo
     @Enumerated(EnumType.STRING)
+    @Column(name = "perfil_financiero")
     private PerfilFinanciero perfilFinanciero;
 
     private Double probabilidad;

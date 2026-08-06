@@ -18,7 +18,7 @@ public class Categoria {
     private Long id;
 
     @NotBlank(message = "El nombre de la categoría no puede estar vacío")
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 255)
     private String nombre;
 
 }
