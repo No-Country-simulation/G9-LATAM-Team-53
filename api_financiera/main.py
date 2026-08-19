@@ -19,7 +19,7 @@ app = FastAPI(
 
 # Cargamos el archivo .pkl
 try:
-    modelo = joblib.load('modelo_finanzas_v3.pkl')
+    modelo = joblib.load('modelo_finanzas_v4.pkl')
 except Exception as e:
     modelo = None
     print(f"Error al cargar el modelo: {e}")
