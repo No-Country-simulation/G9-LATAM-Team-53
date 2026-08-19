@@ -1,0 +1,84 @@
+-- Creación del esquema
+CREATE SCHEMA IF NOT EXISTS financeai_db DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE financeai_db;
+
+-- Tabla de dimensión: Usuarios
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(20),
+    apellido VARCHAR(20),
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,   -- BCrypt
+    moneda VARCHAR(3),
+    ingreso_mensual DECIMAL(15,2),
+    nivel_endeudamiento INT,               
+    frecuencia_ahorro VARCHAR(20)
+) ENGINE=InnoDB;
+
+-- Tabla de referencia: Categorías
+CREATE TABLE categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,    
+    nombre VARCHAR(255) NOT NULL UNIQUE
+) ENGINE=InnoDB;
+
+-- Tabla de hechos: Análisis financiero
+CREATE TABLE analisis_financiero (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    perfil_financiero ENUM('EN_OBSERVACION','EN_RIESGO','SALUDABLE'),
+    probabilidad DOUBLE,
+    user_id INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+) ENGINE=InnoDB;
+
+-- Tabla de hechos: Transacciones
+CREATE TABLE transacciones (
+    id_transaccion INT AUTO_INCREMENT PRIMARY KEY,
+    activa BIT(1),
+    categoria_id INT,                     
+    descripcion VARCHAR(500),    
+    user_id INT NOT NULL,
+    analisis_id INT,                       
+    fecha DATE,
+    valor DECIMAL(15,2),
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (analisis_id) REFERENCES analisis_financiero(id),
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id),
+    INDEX idx_user (user_id),
+    INDEX idx_fecha (fecha)
+) ENGINE=InnoDB;
+
+-- Tabla de hechos: Recomendaciones
+CREATE TABLE recomendaciones (
+    analisis_id INT NOT NULL,
+    recomendacion VARCHAR(255),
+    FOREIGN KEY (analisis_id) REFERENCES analisis_financiero(id)
+) ENGINE=InnoDB;
+
+-- Tabla de hechos: Resumen de gastos
+CREATE TABLE resumen_gastos (
+    analisis_id INT NOT NULL,
+    categoria VARCHAR(255) NOT NULL,
+    valor DOUBLE,
+    PRIMARY KEY (analisis_id, categoria),
+    FOREIGN KEY (analisis_id) REFERENCES analisis_financiero(id)
+) ENGINE=InnoDB;
+
+-- Tabla de control: Tokens inválidos
+CREATE TABLE tokens_invalidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    token VARCHAR(500) NOT NULL
+) ENGINE=InnoDB;
+
+***************************************************************************
+
+INSERT INTO categorias (nombre) VALUES
+    ('alimentacion'),
+    ('educacion'),
+    ('ocio'),
+    ('otros'),
+    ('salud'),
+    ('servicios'),
+    ('streaming'),
+    ('transporte'),
+    ('vivienda') AS nuevas
+ON DUPLICATE KEY UPDATE nombre = nuevas.nombre;
