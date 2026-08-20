@@ -72,12 +72,17 @@ public class AnalisisFinancieroService {
         String nombreYApellido = usuario.getNombre() + " " + usuario.getApellido();
         String mesYFecha = hoy.format(DateTimeFormatter.ofPattern("MM/uuuu"));
 
+        List<String> recomendaciones = evaluarSugerencias(porcentajePorCategoria);
+        PerfilFinanciero perfil = determinarPerfil(totalGastado, ingresoMensual, recomendaciones);
+
         return new AnalisisFinancieroResponse(
                 nombreYApellido,
                 mesYFecha,
                 gastosPorCategoria,
                 porcentajePorCategoria,
-                montoRestante
+                montoRestante,
+                perfil,
+                recomendaciones
         );
     }
 
@@ -94,5 +99,52 @@ public class AnalisisFinancieroService {
                 usuarioActualizado.getIngresoMensual(),
                 "Ingreso mensual actualizado correctamente"
         );
+    }
+
+    private static final Map<String, BigDecimal> TOPES_RECOMENDADOS = Map.ofEntries(
+            Map.entry("Vivienda", new BigDecimal("30")),
+            Map.entry("Alimentación", new BigDecimal("12")),
+            Map.entry("Transporte", new BigDecimal("10")),
+            Map.entry("Salud", new BigDecimal("5")),
+            Map.entry("Educación", new BigDecimal("5")),
+            Map.entry("Servicios", new BigDecimal("8")),
+            Map.entry("Streaming", new BigDecimal("3")),
+            Map.entry("Ocio", new BigDecimal("7")),
+            Map.entry("Otros", new BigDecimal("5")),
+            Map.entry("Deuda", new BigDecimal("5"))
+    );
+
+    private List<String> evaluarSugerencias(Map<String, BigDecimal> porcentajePorCategoria) {
+        List<String> sugerencias = new ArrayList<>();
+
+        porcentajePorCategoria.forEach((categoria, porcentajeGastado) -> {
+            BigDecimal tope = TOPES_RECOMENDADOS.getOrDefault(categoria, new BigDecimal("5"));
+            if (porcentajeGastado.compareTo(tope) > 0) {
+                BigDecimal exceso = porcentajeGastado.subtract(tope);
+                sugerencias.add(String.format(
+                        "Atención en %s: estás gastando un %.2f%% de tu ingreso (tope recomendado: %.0f%%). Exceso: %.2f%%. Considerá ajustar tus gastos en esta categoría.",
+                        categoria, porcentajeGastado, tope, exceso
+                ));
+            }
+        });
+
+        if (sugerencias.isEmpty()) {
+            sugerencias.add("¡Felicitaciones! Tus gastos por categoría se encuentran dentro de los límites recomendados.");
+        }
+
+        return sugerencias;
+    }
+
+    private PerfilFinanciero determinarPerfil(BigDecimal totalGastado, BigDecimal ingresoMensual, List<String> recomendaciones) {
+        BigDecimal porcentajeTotalGastado = totalGastado.multiply(new BigDecimal("100"))
+                .divide(ingresoMensual, 2, RoundingMode.HALF_UP);
+
+        if (porcentajeTotalGastado.compareTo(new BigDecimal("100")) > 0 || recomendaciones.size() >= 4) {
+            return PerfilFinanciero.EN_RIESGO;
+        } else if (porcentajeTotalGastado.compareTo(new BigDecimal("80")) > 0 || recomendaciones.size() >= 2) {
+            return PerfilFinanciero.EN_OBSERVACION;
+        } else {
+            return PerfilFinanciero.SALUDABLE;
+        }
     }
 }
