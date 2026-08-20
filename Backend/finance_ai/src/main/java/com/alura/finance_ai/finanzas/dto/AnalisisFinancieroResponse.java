@@ -8,6 +8,8 @@ public record AnalisisFinancieroResponse(
         String mesYFecha,
         Map<String, BigDecimal> gastosPorCategoria,
         Map<String, BigDecimal> porcentajePorCategoria,
-        BigDecimal montoRestante
+        BigDecimal montoRestante,
+        PerfilFinanciero perfilFinanciero,
+        List<String> recomendaciones
 ) {
 }
