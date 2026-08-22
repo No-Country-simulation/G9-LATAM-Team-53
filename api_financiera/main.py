@@ -58,13 +58,13 @@ def limpiar_texto(text):
 # 3. ESQUEMAS DE DATOS (JSON In / JSON Out)
 # ==========================================
 class TransaccionInput(BaseModel):
-    id_transaccion: int
+    id_transaccion: int | None = None
     descripcion: str
     valor: float
     fecha: str  # Formato esperado: "YYYY-MM-DD"
 
 class PrediccionOutput(BaseModel):
-    id_transaccion: int
+    id_transaccion: int | None = None
     categoria_predicha: str
     confianza: float
 
