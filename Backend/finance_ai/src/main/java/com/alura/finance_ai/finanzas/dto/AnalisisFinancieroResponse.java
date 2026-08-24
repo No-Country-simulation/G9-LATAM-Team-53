@@ -1,6 +1,9 @@
 package com.alura.finance_ai.finanzas.dto;
 
+import com.alura.finance_ai.finanzas.model.PerfilFinanciero;
+
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Map;
 
 public record AnalisisFinancieroResponse(

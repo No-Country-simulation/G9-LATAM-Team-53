@@ -4,6 +4,7 @@ import com.alura.finance_ai.auth.model.User;
 import com.alura.finance_ai.auth.repository.UserRepository;
 import com.alura.finance_ai.finanzas.dto.AnalisisFinancieroResponse;
 import com.alura.finance_ai.finanzas.dto.IngresoMensualResponse;
+import com.alura.finance_ai.finanzas.model.PerfilFinanciero;
 import com.alura.finance_ai.finanzas.repository.AnalisisFinancieroRepository;
 import com.alura.finance_ai.finanzas.repository.TransaccionRepository;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,9 @@ import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 
