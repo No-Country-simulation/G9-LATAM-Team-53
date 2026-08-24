@@ -1,6 +1,7 @@
 package com.alura.finance_ai.finanzas.controller;
 
 import com.alura.finance_ai.finanzas.dto.AnalisisFinancieroResponse;
+import com.alura.finance_ai.finanzas.dto.EstadoIngresoMensualResponse;
 import com.alura.finance_ai.finanzas.dto.IngresoMensualRequest;
 import com.alura.finance_ai.finanzas.dto.IngresoMensualResponse;
 import com.alura.finance_ai.finanzas.service.AnalisisFinancieroService;
@@ -22,6 +23,15 @@ public class AnalisisFinancieroController {
         this.analisisService = analisisService;
     }
 
+    @GetMapping("/ingreso-mensual")
+    public ResponseEntity<?> obtenerEstadoIngresoMensual(Authentication authentication) {
+        try {
+            EstadoIngresoMensualResponse response = analisisService.obtenerEstadoIngresoMensual(authentication.getName());
+            return ResponseEntity.ok(response);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Datos de entrada invalidos", "mensaje", e.getMessage()));
+        }
+    }
     @GetMapping
     public ResponseEntity<?> obtenerAnalisisFinanciero(Authentication authentication) {
         try {

@@ -5,6 +5,7 @@ import com.alura.finance_ai.auth.repository.UserRepository;
 import com.alura.finance_ai.finanzas.dto.AnalisisFinancieroResponse;
 import com.alura.finance_ai.finanzas.dto.IngresoMensualResponse;
 import com.alura.finance_ai.finanzas.model.PerfilFinanciero;
+import com.alura.finance_ai.finanzas.dto.EstadoIngresoMensualResponse;
 import com.alura.finance_ai.finanzas.repository.AnalisisFinancieroRepository;
 import com.alura.finance_ai.finanzas.repository.TransaccionRepository;
 import org.springframework.stereotype.Service;
@@ -88,6 +89,16 @@ public class AnalisisFinancieroService {
                 recomendaciones
         );
     }
+
+    @Transactional(readOnly = true)
+    public EstadoIngresoMensualResponse obtenerEstadoIngresoMensual(String userEmail) {
+        User usuario = userRepository.findByEmail(userEmail)
+                .orElseThrow(() -> new IllegalArgumentException("Usuario no encontrado"));
+        BigDecimal ingresoMensual = usuario.getIngresoMensual();
+        boolean registrado = ingresoMensual != null && ingresoMensual.signum() > 0;
+        return new EstadoIngresoMensualResponse(registrado, registrado ? ingresoMensual : null);
+    }
+
 
     @Transactional
     public IngresoMensualResponse actualizarIngresoMensual(String userEmail, BigDecimal nuevoIngresoMensual) {
