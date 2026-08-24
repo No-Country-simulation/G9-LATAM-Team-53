@@ -32,6 +32,18 @@ public class AnalisisFinancieroController {
             return ResponseEntity.badRequest().body(Map.of("error", "Datos de entrada invalidos", "mensaje", e.getMessage()));
         }
     }
+
+    @PostMapping("/ingreso-mensual")
+    public ResponseEntity<?> registrarIngresoMensual(@Valid @RequestBody IngresoMensualRequest request,
+                                                     Authentication authentication) {
+        try {
+            IngresoMensualResponse response = analisisService.actualizarIngresoMensual(authentication.getName(), request.ingresoMensual());
+            return ResponseEntity.status(201).body(response);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Datos de entrada invalidos", "mensaje", e.getMessage()));
+        }
+    }
+
     @GetMapping
     public ResponseEntity<?> obtenerAnalisisFinanciero(Authentication authentication) {
         try {
