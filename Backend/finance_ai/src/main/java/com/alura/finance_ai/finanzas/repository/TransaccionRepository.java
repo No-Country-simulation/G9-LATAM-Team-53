@@ -19,6 +19,8 @@ public interface TransaccionRepository extends JpaRepository<Transaccion, Long> 
 
     Page<Transaccion> findByUsuarioAndActivaTrue(User usuario, Pageable pageable);
 
+    java.util.Optional<Transaccion> findByIdTransaccionAndUsuarioAndActivaTrue(Long idTransaccion, User usuario);
+
 
     @Query("""
             select t.categoria.nombre, sum(t.valor)

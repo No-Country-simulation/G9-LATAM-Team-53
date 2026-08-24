@@ -2,6 +2,7 @@ package com.alura.finance_ai.finanzas.service;
 
 import com.alura.finance_ai.auth.model.User;
 import com.alura.finance_ai.auth.repository.UserRepository;
+import com.alura.finance_ai.finanzas.dto.ActualizarCategoriaTransaccionRequest;
 import com.alura.finance_ai.finanzas.client.ClasificadorFinancieroClient;
 import com.alura.finance_ai.finanzas.client.dto.ClasificacionResponse;
 import com.alura.finance_ai.finanzas.dto.TransaccionRequest;
@@ -18,6 +19,7 @@ import org.springframework.data.domain.Sort;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Locale;
+import java.util.Optional;
 
 @Service
 public class TransaccionService {
@@ -60,6 +62,21 @@ public class TransaccionService {
         return mapearRespuesta(guardada);
     }
 
+    @Transactional
+    public TransaccionResponse actualizarCategoriaTransaccion(Long idTransaccion,
+                                                             ActualizarCategoriaTransaccionRequest request,
+                                                             String userEmail) {
+        User usuario = buscarUsuarioPorEmail(userEmail);
+        Transaccion transaccion = transaccionRepository.findByIdTransaccionAndUsuarioAndActivaTrue(idTransaccion, usuario)
+                .orElseThrow(() -> new IllegalArgumentException("La transaccion no existe o no pertenece al usuario autenticado"));
+
+        Categoria categoria = buscarCategoriaPorId(request.categoriaId());
+        transaccion.setCategoria(categoria);
+
+        Transaccion actualizada = transaccionRepository.save(transaccion);
+        return mapearRespuesta(actualizada);
+    }
+
     private User buscarUsuarioPorEmail(String userEmail) {
         return userRepository.findByEmail(userEmail)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
@@ -71,6 +88,11 @@ public class TransaccionService {
                 .orElseGet(() -> categoriaService.buscarPorNombre(CATEGORIA_POR_DEFECTO)
                         .orElseThrow(() -> new IllegalStateException(
                                 "No existe la categoria por defecto: " + CATEGORIA_POR_DEFECTO)));
+    }
+
+    private Categoria buscarCategoriaPorId(Long categoriaId) {
+        return categoriaService.buscarPorId(categoriaId)
+                .orElseThrow(() -> new IllegalArgumentException("La categoria no existe"));
     }
 
     private Transaccion mapearEntidad(TransaccionRequest request,
