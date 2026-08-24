@@ -124,8 +124,7 @@ public class AnalisisFinancieroService {
             Map.entry("Servicios", new BigDecimal("8")),
             Map.entry("Streaming", new BigDecimal("3")),
             Map.entry("Ocio", new BigDecimal("7")),
-            Map.entry("Otros", new BigDecimal("5")),
-            Map.entry("Deuda", new BigDecimal("5"))
+            Map.entry("Otros", new BigDecimal("5"))
     );
 
     private List<String> evaluarSugerencias(Map<String, BigDecimal> porcentajePorCategoria) {
