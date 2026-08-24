@@ -11,6 +11,9 @@ import com.alura.finance_ai.finanzas.model.Transaccion;
 import com.alura.finance_ai.finanzas.repository.TransaccionRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -35,6 +38,15 @@ public class TransaccionService {
         this.categoriaService = categoriaService;
         this.clasificadorFinancieroClient = clasificadorFinancieroClient;
     }
+
+    @Transactional(readOnly = true)
+    public Page<TransaccionResponse> listarTransacciones(String userEmail, int pagina, int tamanio) {
+        User usuario = buscarUsuarioPorEmail(userEmail);
+        PageRequest paginacion = PageRequest.of(pagina, tamanio, Sort.by("fecha").descending().and(Sort.by("idTransaccion").descending()));
+        return transaccionRepository.findByUsuarioAndActivaTrue(usuario, paginacion)
+                .map(this::mapearRespuesta);
+    }
+
 
     @Transactional
     public TransaccionResponse registrarTransaccion(TransaccionRequest request, String userEmail) {

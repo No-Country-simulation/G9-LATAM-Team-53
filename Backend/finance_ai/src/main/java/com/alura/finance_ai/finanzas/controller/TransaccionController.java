@@ -4,6 +4,8 @@ import com.alura.finance_ai.finanzas.client.ClasificadorNoDisponibleException;
 import com.alura.finance_ai.finanzas.dto.TransaccionRequest;
 import com.alura.finance_ai.finanzas.dto.TransaccionResponse;
 import com.alura.finance_ai.finanzas.service.TransaccionService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.data.domain.Page;
 
 @RestController
 @RequestMapping("/transacciones")
@@ -48,6 +51,21 @@ public class TransaccionController {
             error.put("error", "Error interno al procesar la transaccion");
             error.put("mensaje", e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+        }
+    }
+
+    @GetMapping
+    public ResponseEntity<?> listarTransacciones(Authentication authentication,
+                                                 @RequestParam(defaultValue = "0") int pagina,
+                                                 @RequestParam(defaultValue = "10") int tamanio) {
+        if (pagina < 0 || tamanio < 1 || tamanio > 100) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Datos de entrada invalidos", "mensaje", "La pagina debe ser mayor o igual a cero y el tamanio entre 1 y 100"));
+        }
+        try {
+            Page<TransaccionResponse> response = transaccionService.listarTransacciones(authentication.getName(), pagina, tamanio);
+            return ResponseEntity.ok(response);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Datos de entrada invalidos", "mensaje", e.getMessage()));
         }
     }
 }

@@ -3,6 +3,8 @@ package com.alura.finance_ai.finanzas.repository;
 import com.alura.finance_ai.auth.model.User;
 import com.alura.finance_ai.finanzas.model.Transaccion;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -14,6 +16,9 @@ import java.util.List;
 public interface TransaccionRepository extends JpaRepository<Transaccion, Long> {
 
     List<Transaccion> findByUsuarioAndActivaTrue(User usuario);
+
+    Page<Transaccion> findByUsuarioAndActivaTrue(User usuario, Pageable pageable);
+
 
     @Query("""
             select t.categoria.nombre, sum(t.valor)
