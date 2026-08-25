@@ -1,0 +1,248 @@
+comercio,categoria,patron_transaccional,rango_min_ars,rango_max_ars,zona_comun
+Carrefour,Alimentación,COMPRA CARREFOUR SUC,10000,180000,Nacional
+Coto,Alimentación,COTO SUC,12000,250000,AMBA
+Jumbo,Alimentación,JUMBO COMPRA,15000,300000,AMBA
+Disco,Alimentación,DISCO SUC,10000,180000,Nacional
+Vea,Alimentación,SUPERMERCADOS VEA,8000,140000,Nacional
+ChangoMas,Alimentación,CHANGOMAS COMPRA,8000,160000,Nacional
+Supermercados Dia,Alimentación,DIA% EXPRESS SUC,4000,60000,Nacional
+Vital Mayorista,Alimentación,VITAL S.A. POS,40000,450000,Nacional
+Maxiconsumo,Alimentación,MAXICONSUMO S.A.,35000,400000,Nacional
+Diarco,Alimentación,DIARCO COMPRA POS,30000,350000,Nacional
+Yaguar,Alimentación,MAYORISTA YAGUAR SUC,40000,500000,Nacional
+Makro,Alimentación,MAKRO POS SUC,45000,600000,Nacional
+McDonald's,Alimentación,MCDONALDS AR POS,6000,40000,Nacional
+Burger King,Alimentación,BURGER KING POS,6000,38000,Nacional
+Mostaza,Alimentación,MOSTAZA SUC COMPRA,5500,35000,Nacional
+KFC,Alimentación,KFC SUC,5000,32000,AMBA
+Subway,Alimentación,SUBWAY COMPRA POS,4500,28000,Nacional
+Wendy's,Alimentación,WENDYS SUC,5500,34000,AMBA
+Papa John's,Alimentación,PAPA JOHNS PIZZA,6000,36000,AMBA
+Starbucks,Alimentación,STARBUCKS S.A. POS,3500,20000,AMBA
+Cafe Martinez,Alimentación,CAFE MARTINEZ SUC,3000,18000,Nacional
+Havanna,Alimentación,HAVANNA S.A. COMPRA,4500,35000,Nacional
+Bonafide,Alimentación,BONAFIDE COMPRA,2500,15000,Nacional
+Grido Helados,Alimentación,GRIDO HELADOS COMPRA,4000,25000,Nacional
+Freddo,Alimentación,FREDDO HELADOS COMPRA,6000,45000,Nacional
+Persicco,Alimentación,PERSICCO SUC,5500,40000,AMBA
+Kentucky Pizzeria,Alimentación,KENTUCKY PIZZA POS,8000,48000,AMBA
+El Noble,Alimentación,EL NOBLE COMPRA,5000,30000,Nacional
+Almacen de Pizzas,Alimentación,ALMACEN DE PIZZAS SUC,7500,45000,AMBA
+El Club de la Milanesa,Alimentación,EL CLUB DE LA MILANESA,12000,75000,Nacional
+PedidosYa,Alimentación,PEDIDOSYA COMPRA,5000,45000,Nacional
+Rappi,Alimentación,RAPPI*COMPRA,5000,50000,Nacional
+Almacen de Barrio,Alimentación,MERCADOPAGO*ALMACEN,2000,30000,Nacional
+Panaderia San Jose,Alimentación,PANADERIA SAN JOSE POS,1500,15000,Regional
+Verduleria Don Carlos,Alimentación,MERCADOPAGO*DONCARLOS,2500,25000,Regional
+Fiambreria El Galpon,Alimentación,MERCADOPAGO*ELGALPON,4000,35000,Regional
+Rotiseria La Querencia,Alimentación,MERCADOPAGO*LAQUERENCIA,5000,45000,Regional
+Carniceria El Ombu,Alimentación,MERCADOPAGO*ELOMBU,10000,85000,Regional
+Dandy,Alimentación,DANDY RESTAURANT COMPRA,12000,80000,AMBA
+Tea Connection,Alimentación,TEA CONNECTION POS,6000,40000,AMBA
+Le Pain Quotidien,Alimentación,LE PAIN QUOTIDIEN SUC,8000,55000,AMBA
+La Continental,Alimentación,LA CONTINENTAL PIZZA,7000,45000,AMBA
+Pizzeria Guerrin,Alimentación,PIZZERIA GUERRIN COMPRA,9000,60000,CABA
+Las Cuartetas,Alimentación,LAS CUARTETAS COMPRA,8500,55000,CABA
+El Cuartito,Alimentación,EL CUARTITO COMPRA,8000,50000,CABA
+La Mezzetta,Alimentación,LA MEZZETTA COMPRA,7000,40000,CABA
+Banchero,Alimentación,BANCHERO PIZZERIA SUC,7500,48000,AMBA
+Pani,Alimentación,PANI DELI COMPRA,10000,65000,AMBA
+Dean & Dennys,Alimentación,DEAN & DENNYS SUC,6000,38000,Nacional
+Mi Barrio Hamburgueseria,Alimentación,MI BARRIO COMPRA,5500,35000,Nacional
+Heisenburger,Alimentación,HEISENBURGER POS,6000,38000,AMBA
+Williamsburg,Alimentación,WILLIAMSBURG BURGER SUC,7000,45000,AMBA
+La Birra Bar,Alimentación,LA BIRRA BAR POS,6500,42000,Nacional
+Club de la Birra,Alimentación,CLUB DE LA BIRRA SUC,8000,55000,AMBA
+Antares,Alimentación,ANTARES COMPRA POS,7500,50000,Nacional
+YPF,Transporte,OP.YPF SUC COMPRA,15000,90000,Nacional
+Shell,Transporte,OP.SHELL COMPRA,15000,95000,Nacional
+Axion Energy,Transporte,AXION ENERGY SUC,12000,85000,Nacional
+Puma Energy,Transporte,PUMA ENERGY SUC,12000,80000,Nacional
+SUBE,Transporte,RECARGA SUBE ACC,1000,9000,Nacional
+Cabify,Transporte,CABIFY COMPRA,3000,25000,AMBA
+Uber Argentina,Transporte,UBER* TRIP ARGENTINA,3000,28000,Nacional
+DiDi Argentina,Transporte,DIDI* TRIP ARGENTINA,2500,22000,AMBA
+Telepase Autopistas,Transporte,TELEPASE AUSA,2500,35000,AMBA
+Autopistas del Sol AUSOL,Transporte,AUSOL AUT. DEL SOL,2000,30000,AMBA
+Autopistas del Oeste,Transporte,AUTOP. DEL OESTE COMPRA,2000,28000,AMBA
+AUBASA,Transporte,PEAJE HUDSON AUBASA,1500,15000,Prov.Bs.As.
+Emova Subte,Transporte,EMOVA SUBTE CABA,1000,10000,CABA
+Metrovias,Transporte,METROVIAS BOLETERIA,1000,8000,CABA
+Flecha Bus,Transporte,FLECHA BUS COMPRA POS,15000,140000,Nacional
+Chevallier,Transporte,NUEVA CHEVALLIER S.A.,12000,120000,Nacional
+Plusmar,Transporte,PLUSMAR COMPRA POS,10000,95000,Prov.Bs.As.
+Peaje Hudson,Transporte,PEAJE HUDSON RECAUDACION,1500,8000,Prov.Bs.As.
+Peaje Samborombon,Transporte,PEAJE SAMBOROMBON AUBASA,1500,8000,Prov.Bs.As.
+Peaje Dock Sud,Transporte,PEAJE DOCK SUD ACC,1500,6000,AMBA
+Peaje Pacheco,Transporte,PEAJE PACHECO AUSOL,2000,8000,AMBA
+Peaje Larena,Transporte,PEAJE LARENA AUSOL,2000,8000,AMBA
+Peaje Debenedetti,Transporte,PEAJE DEBENEDETTI POS,1500,6000,AMBA
+Peaje Parque Avellaneda,Transporte,PEAJE PARQUE AVELLANEDA,2000,8000,CABA
+Peaje Dellepiane,Transporte,PEAJE DELLEPIANE AUSA,1500,6000,CABA
+Peaje Illia,Transporte,PEAJE ILLIA AUSA,1000,4500,CABA
+Peaje Alberti,Transporte,PEAJE ALBERTI AUSA,1000,4500,CABA
+Peaje Sarandi,Transporte,PEAJE SARANDI COMPRA,1500,6000,AMBA
+Trenes Argentinos,Transporte,TRENES ARGENTINOS POS,500,5000,Nacional
+Corredores Viales,Transporte,CORREDORES VIALES COMPRA,2000,30000,Nacional
+Farmacity,Salud,FARMACITY S.A. SUC,5000,80000,Nacional
+Farmacias Dr Ahorro,Salud,DR AHORRO ARGENTINA,3000,45000,Nacional
+Farmacias Central Oeste,Salud,CENTRAL OESTE COMPRA,6000,90000,AMBA
+Farmacia Azul,Salud,FARMACIAS AZUL SUC,4000,70000,AMBA
+Farmacias Selma,Salud,FARMACIAS SELMA POS,5000,85000,AMBA
+Farmacias Vantage,Salud,FARMACIAS VANTAGE SUC,5000,80000,Nacional
+Swiss Medical,Salud,SMG MEDICINA PREPAGA DEB,120000,1100000,Nacional
+OSDE,Salud,DEB.AUT. OSDE B.S.,150000,1200000,Nacional
+Galeno,Salud,GALENO COBERTURA DEB,110000,950000,Nacional
+Medicus,Salud,MEDICUS COMPRA POS DEB,100000,850000,Nacional
+OMINT,Salud,OMINT DEBITO DIRECTO,95000,80000,Nacional
+Sancor Salud,Salud,SANCOR SALUD DEB AUT,90000,850000,Nacional
+Avalian,Salud,AVALIAN MEDICINA PREPAGA,85000,750000,Nacional
+Medife,Salud,MEDIFE ASOCIADOS DEB,80000,720000,Nacional
+Hospital Italiano,Salud,HOSPITAL ITALIANO SOCIO,40000,350000,AMBA
+Hospital Britanico,Salud,HOSPITAL BRITANICO COMPRA,35000,320000,AMBA
+Hospital Aleman,Salud,HOSPITAL ALEMAN PLAN DEB,45000,400000,AMBA
+Sanatorio Guemes,Salud,SANATORIO GUEMES INTERN,20000,250000,CABA
+Sanatorio Otamendi,Salud,SANATORIO OTAMENDI SUC,50000,600000,CABA
+Clinica Suizo Argentina,Salud,CLINICA SUIZO ARGENTINA,45000,550000,CABA
+Sanatorio Finochietto,Salud,SANATORIO FINOCHIETTO,40000,500000,CABA
+Clinica Mater Dei,Salud,CLINICA MATER DEI COMPRA,45000,550000,CABA
+Diagnostico Maipu,Salud,DIAGNOSTICO MAIPU COMPRA,15000,120000,AMBA
+Centro Rossi,Salud,CENTRO ROSSI COMPRA POS,12000,100000,AMBA
+Laboratorio Stamboulian,Salud,STAMBOULIAN LABS,10000,95000,AMBA
+Optica Lutz Ferrando,Salud,LUTZ FERRANDO OPTICA,15000,180000,Nacional
+Opticas Lof,Salud,OPTICAS LOF COMPRA,12000,150000,AMBA
+Optica Pförtner,Salud,PFORTNER OPTICA SUC,18000,220000,AMBA
+Prevencion Salud,Salud,PREVENCION SALUD COMPRA,80000,700000,Nacional
+OSECAC,Salud,OSECAC CUOTA DIRECTA,15000,60000,Nacional
+Accord Salud,Salud,ACCORD SALUD DEBITO DIRECTO,90000,800000,Nacional
+Easy,Vivienda,EASY COMPRA INTERNET,10000,500000,Nacional
+Sodimac,Vivienda,SODIMAC S.A. COMPRA,12000,600000,Nacional
+Blaisten,Vivienda,BLAISTEN S.A. SUC,15000,800000,AMBA
+Argenprop,Vivienda,ARGENPROP DEB AUT,10000,90000,Nacional
+Zonaprop,Vivienda,ZONAPROP COMPRA FACTURA,12000,110000,Nacional
+ConsorcioAbierto,Vivienda,CONSORCIOABIERTO EXPENSAS,30000,250000,Nacional
+Octavo Piso SaaS,Vivienda,OCTAVO PISO EXPENSAS,25000,220000,Nacional
+Ferreteria El Progreso,Vivienda,MERCADOPAGO*ELPROGRESO,3000,45000,Regional
+Pinturerias Rex,Vivienda,REX PINTURERIAS COMPRA,15000,350000,Nacional
+Pinturerias Prestigio,Vivienda,PRESTIGIO S.A. COMPRA,18000,400000,AMBA
+Ferreteria Industrial,Vivienda,MERCADOPAGO*FERRIND,10000,150000,Regional
+Maderas Ramos,Vivienda,MADERAS RAMOS S.A.,25000,300000,Regional
+Alquileres Argentina,Vivienda,ALQUILERES ARGENTINA DEB,40000,600000,Nacional
+Administracion Consorcio Palermo,Vivienda,CONSORCIO PALERMO EXP,35000,280000,CABA
+Consorcio Edificio Belgrano,Vivienda,EDIFICIO BELGRANO EXPENSAS,30000,240000,CABA
+Pinturas Alba,Vivienda,PINTURAS ALBA COMPRA SUC,12000,180000,Nacional
+Ligier Pinturerias,Vivienda,LIGIER COMPRA POS,15000,250000,AMBA
+Ferreteria El Puente,Vivienda,MERCADOPAGO*ELPUENTE,2500,30000,Regional
+Consorcio Caballito,Vivienda,CONSORCIO CABALLITO EXP,28000,220000,CABA
+Expensas Online,Vivienda,EXPENSAS ONLINE TRANSFER,20000,200000,Nacional
+Administracion San Martin,Vivienda,ADMINISTRACION SAN MARTIN,25000,180000,Regional
+Universidad de Buenos Aires UBA,Educación,UBA TASAS INSCRIPCION,15000,180000,AMBA
+Universidad Tecnologica Nacional UTN,Educación,UTN CUOTAS ACADEMICAS,20000,150000,Nacional
+Pontificia Universidad Catolica UCA,Educación,DEB AUT UNIV CATOLICA,200000,850000,AMBA
+Universidad de Palermo UP,Educación,DEB AUT UNIV PALERMO,180000,650000,CABA
+Universidad de Belgrano UB,Educación,DEB AUT UNIV BELGRANO,180000,700000,CABA
+ITBA,Educación,AR.DEB.AUT. ITBA SUC,250000,950000,CABA
+Universidad de San Andres,Educación,DEB AUT UNIV S.ANDRES,280000,1200000,AMBA
+Universidad Torcuato Di Tella UTDT,Educación,DEB AUT UNIV DI TELLA,260000,1100000,CABA
+Libreria El Ateneo,Educación,YENNY/ATENEO SUC COMPRA,8000,75000,Nacional
+Libreria Yenny,Educación,YENNY COMPRA INTERNET,8000,75000,Nacional
+Librerias Cuspide,Educación,CUSPIDE SUC COMPRA,7000,65000,Nacional
+Libreria Scholastica,Educación,SCHOLASTICA COMPRA POS,5000,45000,AMBA
+Colegio San Martin,Educación,COLEGIO SAN MARTIN CUOTAS,80000,450000,Regional
+Colegio Cardinal Newman,Educación,COLEGIO NEWMAN DEB AUT,250000,800000,AMBA
+Libreria CP67,Educación,CP67 COMPRA LIBROS,6000,55000,CABA
+Editorial Santillana Argentina,Educación,EDITORIAL SANTILLANA DEB,10000,90000,Nacional
+Libreria Kel,Educación,KEL LIBRERIA SUC COMPRA,8000,85000,AMBA
+Libreria SBS,Educación,SBS LIBRERIA COMPRA,7000,75000,Nacional
+Colegio Champagnat,Educación,COLEGIO CHAMPAGNAT DEB,120000,550000,AMBA
+Colegio Marin,Educación,COLEGIO MARIN DEB AUT,110000,500000,AMBA
+Colegio Ward,Educación,COLEGIO WARD COMPRA CUOTA,90000,420000,AMBA
+Colegio Northlands,Educación,COLEGIO NORTHLANDS DEB,220000,750000,AMBA
+Colegio St Georges,Educación,COLEGIO ST GEORGES DEB,250000,850000,AMBA
+Colegio San Andres,Educación,COLEGIO SAN ANDRES DEB,240000,800000,AMBA
+Cinemark Hoyts,Ocio,CINEMARK HOYTS COMPRA,6000,30000,Nacional
+Showcase Cinemas,Ocio,SHOWCASE AR COMPRA POS,5500,28000,Nacional
+Multiplex Cines,Ocio,MULTIPLEX CINES COMPRA,5000,25000,AMBA
+Netflix Argentina,Ocio,MP*NETFLIX ARGENTINA,5000,15000,Nacional
+Spotify Argentina,Ocio,MP*SPOTIFY ARGENTINA,2500,10000,Nacional
+Disney Plus Argentina,Ocio,MP*DISNEY PLUS ARG,4000,12000,Nacional
+Max HBO Argentina,Ocio,MP*MAX HBO ARGENTINA,4000,13000,Nacional
+Amazon Prime Argentina,Ocio,MP*AMAZON PRIME ARG,3000,9000,Nacional
+Steam Games Argentina,Ocio,STEAM GAMES COMPRA INT,4000,75000,Nacional
+PlayStation Network AR,Ocio,PLAYSTATION PSN AR COMP,5000,95000,Nacional
+Passline Argentina,Ocio,PASSLINE TICKETS SUC,12000,180000,Nacional
+PuntoTicket Argentina,Ocio,PUNTOTICKET COMPRA,15000,200000,AMBA
+Teatro Gran Rex,Ocio,TEATRO GRAN REX ENTRADAS,15000,180000,CABA
+Teatro Colon,Ocio,TEATRO COLON ENTRADAS,10000,150000,CABA
+Movistar Arena Argentina,Ocio,MOVISTAR ARENA TICKETS,20000,250000,AMBA
+Luna Park,Ocio,LUNA PARK ENTRADAS,15000,180000,CABA
+SportClub,Ocio,DEB AUT SPORTCLUB POS,25000,85000,Nacional
+Megatlon,Ocio,DEB AUT MEGATLON SUC,28000,95000,Nacional
+Smart Fit Argentina,Ocio,DEB AUT SMART FIT POS,18000,48000,Nacional
+On Fit,Ocio,DEB AUT ON FIT GIMNASIOS,16000,45000,AMBA
+Fiter Gimnasios,Ocio,DEB AUT FITER POS,18000,45000,AMBA
+Parque de la Costa,Ocio,PARQUE DE LA COSTA COMP,12000,65000,AMBA
+Teatro Opera,Ocio,TEATRO OPERA ENTRADAS,12000,120000,CABA
+La Trastienda,Ocio,LA TRASTIENDA COMPRA POS,10000,90000,CABA
+Niceto Club,Ocio,NICETO CLUB ENTRADAS,8000,55000,CABA
+Boliche Input,Ocio,INPUT ENTRADAS BAR,10000,60000,CABA
+Discoteca Kika,Ocio,KIKA BAR ENTRADAS,8000,50000,CABA
+Bar El Barista Argentina,Ocio,MERCADOPAGO*ELBARISTA,4000,25000,Regional
+Ticketek,Ocio,TICKETEK ENTRADAS SUC,15000,220000,Nacional
+Edenor,Servicios,DEB AUT EDENOR S.A.,12000,150000,AMBA
+Edesur,Servicios,EDESUR PAGO DIRECTO,10000,140000,AMBA
+Metrogas,Servicios,METROGAS DEBITO AUT,8000,120000,AMBA
+Naturgy,Servicios,NATURGY PAGO COMPRA,8000,115000,AMBA
+AySA,Servicios,PAGOMISCUENTAS AYSA DEB,5000,60000,AMBA
+Telecom Fibertel,Servicios,FLOW TELECOM COMPRA,18000,95000,Nacional
+Personal Flow,Servicios,DEB AUT PERSONAL FLOW,15000,85000,Nacional
+Telecentro,Servicios,TELECENTRO DEBITO DIRECTO,15000,75000,AMBA
+Movistar Hogar Argentina,Servicios,DEB AUT MOVISTAR HOGAR,12000,65000,Nacional
+Claro Hogar Argentina,Servicios,DEB AUT CLARO HOGAR,10000,55000,Nacional
+PagoMisCuentas,Servicios,PAGOMISCUENTAS DEBITO,2000,200000,Nacional
+Provincia NET,Servicios,PROVINCIA NET RECAUDA,3000,150000,Prov.Bs.As.
+Rapipago,Servicios,GIRO RAPIPAGO RECAUDA,3000,150000,Nacional
+Pago Facil,Servicios,GIRO PAGO FACIL RECAUDA,3000,150000,Nacional
+Epec,Servicios,DEB AUT EPEC CORDOBA,15000,180000,Córdoba
+Aguas Cordobesas,Servicios,DEB AUT AGUAS CORDOBESAS,6000,70000,Córdoba
+Litoral Gas,Servicios,LITORAL GAS DEBITO POS,8000,110000,SantaFe
+Camuzzi Gas Pampeana,Servicios,DEB AUT CAMUZZI PAMPEANA,10000,130000,Nacional
+Gas Nea,Servicios,DEB AUT GAS NEA POS,8000,95000,Nacional
+Aguas Bonaerenses,Servicios,DEB AUT AGUAS BONAERENSES,5000,55000,Prov.Bs.As.
+Edet Tucuman,Servicios,DEB AUT EDET TUCUMAN,15000,160000,Tucumán
+Edesal San Luis,Servicios,DEB AUT EDESAL S.A.,12000,130000,SanLuis
+Edersa Rio Negro,Servicios,DEB AUT EDERSA POS,14000,150000,RioNegro
+EPEN Neuquen,Servicios,DEB AUT EPEN NEUQUEN,12000,120000,Neuquén
+Mercado Libre,Otras categorías,MERCADOLIBRE*COMPRA,5000,950000,Nacional
+Zara Argentina,Otras categorías,ZARA COMPRA INTERNET,40000,450000,Nacional
+Coppel,Otras categorías,COPPEL TIENDAS COMPRA,15000,300000,AMBA
+Dexter,Otras categorías,DEXTER SPORT POS,20000,250000,Nacional
+Stock Center,Otras categorías,STOCK CENTER COMPRA POS,18000,220000,Nacional
+Fravega,Otras categorías,FRAVEGA S.A. SUC,20000,1800000,Nacional
+Musimundo,Otras categorías,MUSIMUNDO COMPRA POS,15000,1400000,Nacional
+Megatone,Otras categorías,MEGATONE COMPRA INTERNET,15000,1300000,Nacional
+Solo Deportes,Otras categorías,SOLO DEPORTES COMPRA POS,15000,220000,Nacional
+Comisiones Banco Galicia,Otras categorías,COMISION GALICIA DEB,1500,24000,Nacional
+Banco Santander Rio,Otras categorías,SANTANDER COMISION SERVICIO,1500,25000,Nacional
+Banco Nacion,Otras categorías,BANCO NACION CARGO MANT,1000,15000,Nacional
+Banco Provincia,Otras categorías,BAPRO MANTENIMIENTO CTA,1000,16000,Prov.Bs.As.
+Banco Macro,Otras categorías,BANCO MACRO DEB AUTOMATICO,1200,20000,Nacional
+Banco BBVA,Otras categorías,BBVA COMISION MANT CTA,1500,24000,Nacional
+Banco Patagonia,Otras categorías,BANCO PATAGONIA CARGOS,1200,18000,Nacional
+Banco ICBC,Otras categorías,ICBC MANTENIMIENTO SERVICIO,1500,26000,Nacional
+Banco HSBC,Otras categorías,HSBC COMISION PAQUETE DEB,1800,28000,Nacional
+Mercado Pago,Otras categorías,MERCADOPAGO*TRANSFERENCIA,1000,2000000,Nacional
+Uala,Otras categorías,PREPAGO*UALA CARGO,1000,1200000,Nacional
+Impuestos AFIP,Otras categorías,VEP AFIP ACC COMPRA,15000,900000,Nacional
+AGIP Rentas,Otras categorías,AGIP RENTAS DEB AUTOMATICO,5000,250000,CABA
+ARBA Impuestos,Otras categorías,DEB AUT ARBA BS AS,5000,280000,Prov.Bs.As.
+Seguros La Caja,Otras categorías,DEB AUT LA CAJA SEGUROS,20000,180000,Nacional
+Sancor Seguros,Otras categorías,SANCOR SEGUROS COMPRA DEB,18000,190000,Nacional
+Federacion Patronal Seguros,Otras categorías,FEDERACION PATRONAL DEB,16000,170000,Nacional
+Mercantil Andina Seguros,Otras categorías,MERCANTIL ANDINA DEB,15000,160000,Nacional
+Allianz Seguros,Otras categorías,ALLIANZ SEGUROS DEB AUT,22000,210000,Nacional
+Comisiones Banco Frances,Otras categorías,BBVA COMISION PAQUETE DEB,1500,24000,Nacional
+Tarjeta Naranja,Otras categorías,TARJETA NARANJA DEB PAGO,15000,600000,Nacional
+Comisiones Banco Comafi,Otras categorías,COMAFI CARGO MANT CTA,1200,18000,Nacional
+Giro Cajero Banelco,Otras categorías,GIRO CAJERO BANELCO,2000,150000,Nacional
+Giro Cajero Link,Otras categorías,GIRO CAJERO RED LINK,2000,120000,Nacional

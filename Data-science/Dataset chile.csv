@@ -1,0 +1,244 @@
+comercio,categoria,patron_transaccional,rango_min_clp,rango_max_clp,zona_comun
+Lider,Alimentación,COMPRA WEBPAY LIDER,12000,180000,Nacional
+Jumbo,Alimentación,COMPRA WEBPAY JUMBO,12000,180000,Nacional
+Santa Isabel,Alimentación,TRANSBANK SANTA ISABEL,12000,180000,Nacional
+Unimarc,Alimentación,TRANSBANK UNIMARC,12000,180000,Nacional
+Tottus,Alimentación,COMPRA WEBPAY TOTTUS,12000,180000,Nacional
+Mayorista 10,Alimentación,TRANSBANK MAYORISTA 10,4000,50000,Nacional
+Alvi,Alimentación,TRANSBANK ALVI,4000,50000,Nacional
+SuperBodega Acuenta,Alimentación,TRANSBANK SUPERBODEGA ACUENTA,4000,50000,Nacional
+Oxxo,Alimentación,TRANSBANK OXXO,4000,50000,Nacional
+OK Market,Alimentación,TRANSBANK OK MARKET,4000,50000,Nacional
+Pronto Copec,Alimentación,TRANSBANK PRONTO COPEC,4000,50000,Nacional
+Spacio1 Petrobras,Alimentación,TRANSBANK SPACIO1 PETROBRAS,4000,50000,Nacional
+Upa!,Alimentación,TRANSBANK UPA!,4000,50000,Nacional
+McDonalds,Alimentación,TRANSBANK MCDONALDS,6000,35000,Nacional
+Burger King,Alimentación,TRANSBANK BURGER KING,6000,35000,Nacional
+KFC,Alimentación,TRANSBANK KFC,6000,35000,Nacional
+Doggis,Alimentación,TRANSBANK DOGGIS,6000,35000,Nacional
+Juan Maestro,Alimentación,TRANSBANK JUAN MAESTRO,6000,35000,Nacional
+Tommy Beans,Alimentación,TRANSBANK TOMMY BEANS,6000,35000,Nacional
+Mamut,Alimentación,TRANSBANK MAMUT,4000,50000,Nacional
+Barrio Chicken,Alimentación,TRANSBANK BARRIO CHICKEN,6000,35000,Nacional
+Dominó,Alimentación,TRANSBANK DOMINO,6000,35000,Nacional
+Pedro Juan y Diego,Alimentación,TRANSBANK PEDRO JUAN Y DIEGO,6000,35000,Nacional
+Buffalo Waffles,Alimentación,TRANSBANK BUFFALO WAFFLES,6000,35000,Nacional
+Carls Jr,Alimentación,TRANSBANK CARLS JR,6000,35000,Nacional
+Papa Johns,Alimentación,TRANSBANK PAPA JOHNS,6000,35000,Nacional
+Subway,Alimentación,TRANSBANK SUBWAY,6000,35000,Nacional
+Wendy's,Alimentación,TRANSBANK WENDYS,6000,35000,Nacional
+Melt Pizzas,Alimentación,TRANSBANK MELT PIZZAS,6000,35000,Nacional
+Pizza Hut,Alimentación,TRANSBANK PIZZA HUT,6000,35000,Nacional
+Telepizza,Alimentación,TRANSBANK TELEPIZZA,6000,35000,Nacional
+Starbucks,Alimentación,TRANSBANK STARBUCKS,3000,18000,Nacional
+Juan Valdez,Alimentación,TRANSBANK JUAN VALDEZ,3000,18000,Nacional
+Dunkin Donuts,Alimentación,TRANSBANK DUNKIN DONUTS,3000,18000,Nacional
+Tavelli,Alimentación,TRANSBANK TAVELLI,4000,50000,Nacional
+Cory,Alimentación,TRANSBANK CORY,4000,50000,Nacional
+Bravissimo,Alimentación,TRANSBANK BRAVISSIMO,4000,50000,Nacional
+Schopdog,Alimentación,TRANSBANK SCHOPDOG,4000,50000,Nacional
+Tarragona,Alimentación,TRANSBANK TARRAGONA,6000,35000,Nacional
+Emporio La Rosa,Alimentación,TRANSBANK EMPORIO LA ROSA,4000,50000,Nacional
+Sibaritas 87,Alimentación,TRANSBANK SIBARITAS 87,4000,50000,Región Metropolitana
+La Sanguchera del Barrio,Alimentación,TRANSBANK LA SANGUCHERA,4000,50000,Región Metropolitana
+Fuente Alemana,Alimentación,TRANSBANK FUENTE ALEMANA,4000,50000,Región Metropolitana
+Fuente Suiza,Alimentación,TRANSBANK FUENTE SUIZA,4000,50000,Región Metropolitana
+PedidosYa,Alimentación,COMPRA WEBPAY PEDIDOSYA,4000,50000,Nacional
+Rappi,Alimentación,COMPRA WEBPAY RAPPI,4000,50000,Nacional
+Uber Eats,Alimentación,COMPRA WEBPAY UBER EATS,4000,50000,Nacional
+Almacén de Barrio,Alimentación,TRANSBANK ALMACEN,4000,50000,Nacional
+Panadería San Ramón,Alimentación,TRANSBANK PANADERIA SAN RAMON,4000,50000,Regional
+Verdulería Don Lucho,Alimentación,TRANSBANK VERDULERIA DON LUCHO,4000,50000,Regional
+Botillería El Faro,Alimentación,TRANSBANK BOTILLERIA EL FARO,4000,50000,Regional
+La Picá del Gringo,Alimentación,TRANSBANK LA PICA DEL GRINGO,4000,50000,Regional
+Pastelería Marmentini,Alimentación,TRANSBANK PASTELERIA MARMENTINI,4000,50000,Regional
+Almacén Doña Juana,Alimentación,TRANSBANK DOÑA JUANA,4000,50000,Regional
+Feria Libre Pinto,Alimentación,TRANSBANK FERIA PINTO,4000,50000,Regional
+Copec,Transporte,BENCINA COPEC,15000,75000,Nacional
+Shell,Transporte,BENCINA SHELL,15000,75000,Nacional
+Petrobras,Transporte,BENCINA PETROBRAS,15000,75000,Nacional
+Uber Chile,Transporte,COMPRA WEBPAY UBER,3000,22000,Nacional
+Cabify,Transporte,COMPRA WEBPAY CABIFY,3000,22000,Nacional
+DiDi Taxi,Transporte,COMPRA WEBPAY DIDI,3000,22000,Nacional
+Metro de Santiago,Transporte,CARGA METRO SANTIAGO,1500,12000,Región Metropolitana
+Turbus,Transporte,COMPRA WEBPAY TURBUS,1500,12000,Nacional
+Pullman Bus,Transporte,COMPRA WEBPAY PULLMAN BUS,1500,12000,Nacional
+Tarjeta Bip!,Transporte,CARGA BIP WEBPAY,1500,12000,Región Metropolitana
+EFE Trenes,Transporte,COMPRA EFE TRENES,1500,12000,Regional
+Autopista Central,Transporte,PAT DEBITO AUTOPISTA CENTRAL,3000,45000,Región Metropolitana
+Costanera Norte,Transporte,PAT DEBITO COSTANERA NORTE,3000,45000,Región Metropolitana
+Vespucio Norte,Transporte,PAT DEBITO VESPUCIO NORTE,3000,45000,Región Metropolitana
+Vespucio Sur,Transporte,PAT DEBITO VESPUCIO SUR,3000,45000,Región Metropolitana
+Autopista Vespucio Oriente AVO,Transporte,PAT DEBITO AVO,3000,45000,Región Metropolitana
+Peaje Angostura,Transporte,PEAJE ANGOSTURA POS,1000,4900,Regional
+Peaje Troncal Lampa,Transporte,PEAJE LAMPA POS,1000,4900,Región Metropolitana
+Peaje Zapata,Transporte,PEAJE ZAPATA POS,1000,4900,Regional
+Peaje Melipilla,Transporte,PEAJE MELIPILLA POS,1000,4900,Regional
+Ruta del Maipo,Transporte,PAT DEBITO RUTA MAIPO,3000,45000,Regional
+Ruta 68,Transporte,PAT DEBITO RUTA 68,3000,45000,Regional
+Ruta del Itata,Transporte,PAT DEBITO RUTA ITATA,3000,45000,Regional
+Autopista del Sol,Transporte,PAT DEBITO AUTOPISTA DEL SOL,3000,45000,Regional
+Estacionamiento Saba,Transporte,ESTACIONAMIENTO SABA POS,1500,12000,Nacional
+Estacionamiento Mall Center,Transporte,ESTACIONAMIENTO MALL CENTER,1500,12000,Nacional
+Peaje Lateral,Transporte,PEAJE LATERAL CASH,1000,4900,Regional
+Colectivo Linea 40,Transporte,PAGO COLECTIVO LINEA 40,1500,12000,Regional
+Buses Metropolitana,Transporte,TRANSANTIAGO BUSES METROPOLITANA,1500,12000,Región Metropolitana
+Farmacias Cruz Verde,Salud,COMPRA REDCOMPRA CRUZ VERDE,4000,75000,Nacional
+Farmacias Ahumada,Salud,COMPRA REDCOMPRA AHUMADA,4000,75000,Nacional
+Farmacias Salcobrand,Salud,COMPRA REDCOMPRA SALCOBRAND,4000,75000,Nacional
+Farmacias del Dr Simi,Salud,COMPRA REDCOMPRA DR SIMI,4000,75000,Nacional
+Farmacias Knop,Salud,COMPRA REDCOMPRA KNOP,4000,75000,Nacional
+Redfarma,Salud,COMPRA REDCOMPRA REDFARMA,4000,75000,Regional
+Eco Farmacias,Salud,COMPRA REDCOMPRA ECO FARMACIAS,4000,75000,Regional
+Dr Ahorro,Salud,COMPRA REDCOMPRA DR AHORRO,4000,75000,Nacional
+Clínica Alemana,Salud,CLINICA ALEMANA SANTIAGO,18000,450000,Región Metropolitana
+Clínica Las Condes,Salud,CLINICA LAS CONDES POS,18000,450000,Región Metropolitana
+Clínica Santa María,Salud,CLINICA SANTA MARIA POS,18000,450000,Región Metropolitana
+Clínica Dávila,Salud,CLINICA DAVILA POS,18000,450000,Región Metropolitana
+Clínica Indisa,Salud,CLINICA INDISA POS,18000,450000,Región Metropolitana
+Integramédica,Salud,INTEGRAMEDICA CONSULTA SUC,18000,450000,Nacional
+RedSalud,Salud,REDSALUD ATENCION MEDICA,18000,450000,Nacional
+Clínica Universidad de los Andes,Salud,CLINICA UNIV DE LOS ANDES,18000,450000,Región Metropolitana
+Clínica Bupa,Salud,CLINICA BUPA SANTIAGO,18000,450000,Región Metropolitana
+Megasalud,Salud,MEGASALUD ATENCION MEDICA,18000,450000,Nacional
+Isapre Colmena,Salud,PAT ISAPRE COLMENA,35000,280000,Nacional
+Isapre Banmédica,Salud,PAT ISAPRE BANMEDICA,35000,280000,Nacional
+Isapre Consalud,Salud,PAT ISAPRE CONSALUD,35000,280000,Nacional
+Isapre Cruz Blanca,Salud,PAT ISAPRE CRUZ BLANCA,35000,280000,Nacional
+Fonasa,Salud,FONASA COMPRA BONO,35000,280000,Nacional
+Laboratorio Bionet,Salud,LABORATORIO BIONET POS,6000,65000,Nacional
+Ópticas Schilling,Salud,OPTICAS SCHILLING COMPRA,6000,65000,Nacional
+Ópticas GMO,Salud,OPTICAS GMO COMPRA SUC,6000,65000,Nacional
+Dentalalegre,Salud,DENTALALEGRE CLINICA DENTAL,6000,65000,Regional
+Clínica Dental Cumbre,Salud,CLINICA DENTAL CUMBRE POS,6000,65000,Nacional
+Centro Médico San Lorenzo,Salud,CENTRO MEDICO SAN LORENZO,6000,65000,Regional
+Sodimac Homecenter,Vivienda,COMPRA WEBPAY SODIMAC,8000,300000,Nacional
+Easy,Vivienda,COMPRA WEBPAY EASY,8000,300000,Nacional
+Construmart,Vivienda,COMPRA REDCOMPRA CONSTRUMART,6000,120000,Nacional
+Imperial,Vivienda,COMPRA REDCOMPRA IMPERIAL,6000,120000,Nacional
+Ikea Chile,Vivienda,COMPRA WEBPAY IKEA CHILE,8000,300000,Región Metropolitana
+Casaideas,Vivienda,COMPRA REDCOMPRA CASAIDEAS,6000,120000,Nacional
+Paris Deco,Vivienda,COMPRA WEBPAY PARIS DECO,6000,120000,Nacional
+Falabella Home,Vivienda,COMPRA WEBPAY FALABELLA HOME,6000,120000,Nacional
+ComunidadFeliz Gastos Comunes,Vivienda,PAGO COMUNIDADFELIZ GASTO COMUN,50000,350000,Nacional
+EdiPro Edificio,Vivienda,PAGO EDIPRO GASTOS COMUNES,50000,350000,Nacional
+Kastor Gastos Comunes,Vivienda,PAGO KASTOR GASTO COMUN,50000,350000,Nacional
+CondoVive Copropiedad,Vivienda,CONDONVIVE COPROPIEDAD TRANSFER,50000,350000,Nacional
+BReal Propiedades,Vivienda,BREAL PROPIEDADES PAGO GASTOS,50000,350000,Nacional
+Ferretería El Candado,Vivienda,FERRETERIA EL CANDADO SUC,6000,120000,Regional
+Maderas Encofrados,Vivienda,MADERAS ENCOFRADOS COMPRA,6000,120000,Regional
+Alquiler Propiedades Chile,Vivienda,ALQUILER PROPIEDADES CHILE ARRIENDO,50000,350000,Nacional
+Pinturas Sherwin Williams,Vivienda,SHERWIN WILLIAMS COMPRA SUC,6000,120000,Nacional
+Yolito Ferretería,Vivienda,YOLITO FERRETERIA COMPRA,6000,120000,Región Metropolitana
+Ferretería Prat,Vivienda,FERRETERIA PRAT COMPRA,6000,120000,Regional
+Administración Jardines de Maipú,Vivienda,ADMINISTRACION JARDINES MAIPU EXP,50000,350000,Región Metropolitana
+Copropietarios Edificio El Golf,Vivienda,EDIFICIO EL GOLF GASTOS COMUNES,50000,350000,Región Metropolitana
+Universidad de Chile,Educación,PAT MATRICULA U DE CHILE,120000,650000,Región Metropolitana
+Pontificia Universidad Católica,Educación,PAT ARANCEL UNIV CATOLICA,120000,650000,Región Metropolitana
+Universidad de Santiago USACH,Educación,PAT USACH CUOTA ACADEMICA,120000,650000,Región Metropolitana
+Universidad Andrés Bello UNAB,Educación,PAT ARANCEL UNAB SUC,120000,650000,Nacional
+DUOC UC,Educación,PAT DUOC UC CUOTAS,120000,650000,Nacional
+INACAP,Educación,PAT INACAP ARANCEL,120000,650000,Nacional
+AIEP,Educación,PAT AIEP ARANCEL,120000,650000,Nacional
+Universidad San Sebastián USS,Educación,PAT USS CUOTA MENSUAL,120000,650000,Nacional
+Universidad Adolfo Ibáñez UAI,Educación,PAT UAI ARANCEL,120000,650000,Región Metropolitana
+Universidad Diego Portales UDP,Educación,PAT UDP ARANCEL ACADEMICO,120000,650000,Región Metropolitana
+Universidad de los Andes,Educación,PAT UNIV DE LOS ANDES ARANCEL,120000,650000,Región Metropolitana
+Universidad del Desarrollo UDD,Educación,PAT UDD ARANCEL,120000,650000,Región Metropolitana
+Librería Nacional,Educación,COMPRA REDCOMPRA LIBRERIA NACIONAL,3000,50000,Nacional
+Dimeiggs,Educación,COMPRA REDCOMPRA DIMEIGGS,3000,50000,Nacional
+Antártica Libros,Educación,COMPRA WEBPAY ANTARTICA LIBROS,3000,50000,Nacional
+Feria Chilena del Libro,Educación,COMPRA REDCOMPRA FERIA CHILENA LIBRO,3000,50000,Nacional
+Librería Subsuelo,Educación,LIBRERIA SUBSUELO COMPRA,3000,50000,Región Metropolitana
+Editorial Santillana,Educación,EDITORIAL SANTILLANA CHILE PAT,6000,150000,Nacional
+Librería Qué Leo,Educación,LIBRERIA QUE LEO COMPRA SUC,3000,50000,Nacional
+Instituto Profesional Santo Tomás,Educación,PAT SANTO TOMAS ARANCEL,120000,650000,Nacional
+Colegio San Ignacio,Educación,COLEGIO SAN IGNACIO CUOTAS PAT,6000,150000,Región Metropolitana
+Colegio Saint George,Educación,COLEGIO SAINT GEORGE ARANCEL PAT,6000,150000,Región Metropolitana
+Librería El Sembrador,Educación,LIBRERIA EL SEMBRADOR COMPRA,3000,50000,Regional
+Cinemark,Ocio,COMPRA WEBPAY CINEMARK,6000,28000,Nacional
+CineHoyts,Ocio,COMPRA WEBPAY CINEHOYTS,6000,28000,Nacional
+Cineplanet,Ocio,COMPRA WEBPAY CINEPLANET,6000,28000,Nacional
+Netflix Chile,Ocio,PAT NETFLIX CHILE,4500,18000,Nacional
+Spotify,Ocio,PAT SPOTIFY CHILE,4500,18000,Nacional
+Disney Plus,Ocio,PAT DISNEY PLUS CHILE,4500,18000,Nacional
+Max HBO,Ocio,PAT MAX HBO CHILE,4500,18000,Nacional
+Amazon Prime Video,Ocio,PAT AMAZON PRIME VIDEO,4500,18000,Nacional
+Steam Games,Ocio,STEAM GAMES COMPRA INTER,8000,95000,Nacional
+PlayStation Network,Ocio,PLAYSTATION NETWORK COMPRA,8000,95000,Nacional
+Passline,Ocio,COMPRA WEBPAY PASSLINE,8000,95000,Nacional
+PuntoTicket,Ocio,COMPRA WEBPAY PUNTOTICKET,8000,95000,Nacional
+Movistar Arena,Ocio,MOVISTAR ARENA ENTRADAS,8000,95000,Región Metropolitana
+Teatro Caupolicán,Ocio,TEATRO CAUPOLICAN ENTRADAS SUC,8000,95000,Región Metropolitana
+Bar La Virgen,Ocio,BAR LA VIRGEN COMPRA SUC,8000,95000,Región Metropolitana
+Smart Fit,Ocio,PAT SMART FIT GIMNASIOS,18000,48000,Nacional
+Energy Fitness,Ocio,PAT ENERGY FITNESS GIMNASIO,18000,48000,Nacional
+Pacific Fitness,Ocio,PAT PACIFIC FITNESS GIMNASIO,18000,48000,Nacional
+Dmoov Chile,Ocio,PAT DMOOV CHILE SUC,18000,48000,Región Metropolitana
+Gimnasio Upgrade,Ocio,PAT GIMNASIO UPGRADE POS,18000,48000,Nacional
+Kidzania Santiago,Ocio,KIDZANIA SANTIAGO ENTRADAS,8000,95000,Región Metropolitana
+Fantasilandia,Ocio,FANTASILANDIA ENTRADAS,8000,95000,Región Metropolitana
+Teatro Nescafé de las Artes,Ocio,TEATRO NESCAFE DE LAS ARTES ENTRADAS,8000,95000,Región Metropolitana
+Club de Baile,Ocio,CLUB DE BAILE ENTRADAS,8000,95000,Regional
+Ticketmaster Chile,Ocio,COMPRA WEBPAY TICKETMASTER,8000,95000,Nacional
+Bar El Barista,Ocio,TRANSBANK BAR EL BARISTA,8000,95000,Regional
+Discoteca Amanda,Ocio,DISCOTECA AMANDA ENTRADAS POS,8000,95000,Región Metropolitana
+Gimnasio Sportlife,Ocio,PAT SPORTLIFE GIMNASIOS,18000,48000,Nacional
+Zoológico Metropolitano,Ocio,ZOOLOGICO METROPOLITANO ENTRADAS,8000,95000,Región Metropolitana
+Enel Distribución,Servicios,PAGO CUENTA PAT ENEL DISTRIBUCION,10000,150000,Región Metropolitana
+CGE Distribución,Servicios,PAGO CUENTA PAT CGE DISTRIBUCION,10000,150000,Regional
+Chilquinta,Servicios,PAGO CUENTA PAT CHILQUINTA,10000,150000,Regional
+Saesa,Servicios,PAGO CUENTA PAT SAESA,10000,150000,Regional
+Aguas Andinas,Servicios,PAGO CUENTA PAT AGUAS ANDINAS,10000,150000,Región Metropolitana
+Essbio,Servicios,PAGO CUENTA PAT ESSBIO AGUA,10000,150000,Regional
+Esval,Servicios,PAGO CUENTA PAT ESVAL AGUA,10000,150000,Regional
+Nuevosur,Servicios,PAGO CUENTA PAT NUEVOSUR AGUA,10000,150000,Regional
+Aguas del Altiplano,Servicios,PAGO CUENTA PAT AGUAS DEL ALTIPLANO,10000,150000,Regional
+Metrogas,Servicios,PAGO CUENTA PAT METROGAS,10000,150000,Región Metropolitana
+Gasco,Servicios,PAGO CUENTA PAT GASCO,10000,150000,Nacional
+Lipigas,Servicios,PAGO CUENTA PAT LIPIGAS,10000,150000,Nacional
+Abastible,Servicios,PAGO CUENTA PAT ABASTIBLE,10000,150000,Nacional
+VTR Internet,Servicios,PAGO CUENTA PAT VTR TELECOM,10000,150000,Nacional
+Movistar Hogar,Servicios,PAGO CUENTA PAT MOVISTAR HOGAR,10000,150000,Nacional
+Entel Fibra,Servicios,PAGO CUENTA PAT ENTEL FIBRA,10000,150000,Nacional
+Claro Hogar,Servicios,PAGO CUENTA PAT CLARO HOGAR,10000,150000,Nacional
+WOM Fibra,Servicios,PAGO CUENTA PAT WOM FIBRA,10000,150000,Nacional
+Mundo Pacífico,Servicios,PAGO CUENTA PAT MUNDO PACIFICO,10000,150000,Regional
+GTD Manquehue,Servicios,PAGO CUENTA PAT GTD MANQUEHUE,10000,150000,Región Metropolitana
+Servipag Cuentas,Servicios,PAGO SERVIPAG CUENTAS RECAUDACION,10000,150000,Nacional
+Sencillito Cuentas,Servicios,PAGO SENCILLITO CUENTAS RECAUDACION,10000,150000,Nacional
+Pago de Luz Municipalidad,Servicios,PAGO MUNICIPALIDAD ALUMBRADO LUZ,10000,150000,Regional
+Aguas de Antofagasta,Servicios,PAGO CUENTA PAT AGUAS ANTOFAGASTA,10000,150000,Regional
+Falabella,Otras categorías,COMPRA WEBPAY FALABELLA SUC,18000,350000,Nacional
+Ripley,Otras categorías,COMPRA WEBPAY RIPLEY SUC,18000,350000,Nacional
+Paris,Otras categorías,COMPRA WEBPAY PARIS SUC,18000,350000,Nacional
+H&M Chile,Otras categorías,COMPRA REDCOMPRA HM CHILE,6000,200000,Nacional
+Zara Chile,Otras categorías,COMPRA REDCOMPRA ZARA CHILE,6000,200000,Nacional
+Corona,Otras categorías,COMPRA REDCOMPRA CORONA SUC,6000,200000,Nacional
+Tricot,Otras categorías,COMPRA REDCOMPRA TRICOT SUC,6000,200000,Nacional
+La Polar,Otras categorías,COMPRA REDCOMPRA LA POLAR SUC,6000,200000,Nacional
+Decathlon,Otras categorías,COMPRA REDCOMPRA DECATHLON CHILE,6000,200000,Nacional
+Sparta,Otras categorías,COMPRA REDCOMPRA SPARTA DEPORTES,6000,200000,Nacional
+PC Factory,Otras categorías,COMPRA REDCOMPRA PC FACTORY SUC,12000,950000,Nacional
+MacOnline,Otras categorías,COMPRA WEBPAY MACONLINE SUC,12000,950000,Nacional
+Reifschneider,Otras categorías,COMPRA REDCOMPRA REIFSCHNEIDER,12000,950000,Nacional
+AliExpress,Otras categorías,ALIPAY*ALIEXPRESS INTER,6000,200000,Nacional
+Mercado Libre,Otras categorías,MERCADOLIBRE*COMPRA WEBPAY,6000,200000,Nacional
+Amazon Chile,Otras categorías,AMAZON*MARKETPLACE CHILE,6000,200000,Nacional
+Banco de Chile Comisiones,Otras categorías,COMISION MANTENCION BANCO CHILE,1000,30000,Nacional
+Banco Estado Tarjeta,Otras categorías,CARGO GIRO CAJERO BANCOESTADO,1000,30000,Nacional
+Banco Santander Seguro,Otras categorías,PAGO SEGURO PAT SANTANDER,1000,30000,Nacional
+BCI Seguros,Otras categorías,PAGO DEBITO PAT BCI SEGUROS,1000,30000,Nacional
+Itaú Comisiones,Otras categorías,COMISION MANTENCION ITAU SUC,1000,30000,Nacional
+Scotiabank,Otras categorías,CARGOS ADMINISTRATIVOS SCOTIABANK,1000,30000,Nacional
+Seguros Metlife,Otras categorías,PAT SEGURO METLIFE CHILE,1000,30000,Nacional
+HDI Seguros,Otras categorías,PAGO DEBITO PAT HDI SEGUROS,1000,30000,Nacional
+Mapfre,Otras categorías,PAGO DEBITO PAT MAPFRE SEGUROS,1000,30000,Nacional
+Seguros Sura,Otras categorías,PAGO DEBITO PAT SEGUROS SURA,1000,30000,Nacional
+Zurich Chile,Otras categorías,PAGO DEBITO PAT ZURICH CHILE,1000,30000,Nacional
+Chilena Consolidada,Otras categorías,PAGO DEBITO PAT CHILENA CONSOLIDADA,1000,30000,Nacional
+CMR Falabella Cobros,Otras categorías,COMISION MANTENCION CMR FALABELLA,1000,30000,Nacional
+Tarjeta Cencosud,Otras categorías,COMISION MANTENCION TARJETA CENCOSUD,1000,30000,Nacional
+Caja Vecina Almacen,Otras categorías,GIRO CAJAVECINA ALMACEN POS,6000,200000,Nacional
+Giro Cajero Redbanc,Otras categorías,GIRO REDBANC CAJERO AUTOMATICO,6000,200000,Nacional
+Servicio Impuestos Internos SII,Otras categorías,SII PAGO DECLARACION RENTA,6000,200000,Nacional
