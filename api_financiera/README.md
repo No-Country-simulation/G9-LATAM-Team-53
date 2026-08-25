@@ -88,3 +88,52 @@ Si quieres probar que el endpoint funciona desde tu terminal sin usar el navegad
       "valor": 6900.0,
       "fecha": "2026-08-04"
     }'
+
+## ☁️ Despliegue en Oracle Cloud (OCI)
+
+El microservicio está desplegado en una instancia de cómputo de Oracle Cloud (Santiago, Chile) con las siguientes características:
+
+- **Shape:** VM.Standard.E2.1.Micro (Siempre Gratis, AMD)
+- **Sistema Operativo:** Ubuntu 24.04 LTS
+- **Puerto expuesto:** 8000
+- **Contenedor Docker** con reinicio automático (`--restart always`)
+
+### Resumen de pasos realizados
+
+1. **Creación de la instancia**  
+   - Se creó una VM con Ubuntu 24.04 y una clave SSH para acceso seguro.
+
+2. **Configuración de red y seguridad**  
+   - Se asignó una IP pública efímera.
+   - Se abrió el puerto 8000 en el firewall del sistema operativo (`iptables`) y en las listas de seguridad de Oracle (Ingress Rule para TCP/8000).
+
+3. **Instalación de Docker**  
+   ```bash
+   sudo apt update
+   sudo apt install docker.io -y
+   sudo systemctl enable --now docker
+   sudo usermod -aG docker $USER```
+
+4. **Transferencia de archivos**
+
+    Desde la máquina local se copiaron los archivos esenciales (Dockerfile, main.py, modelo_finanzas_v4.pkl, requirements.txt) mediante scp:
+
+    ```bash
+    scp -i ~/Descargas/archivokey main.py modelo_finanzas_v4.pkl maquina@146.181.44.7:/ ```
+
+5. **Construcción y ejecución del contenedor**
+
+   ```bash 
+    docker build -t api-financiera .
+    docker run -d -p 8000:8000 --restart always --name contenedor-finanzas api-financiera ```
+
+6. **Verificación**
+
+    El contenedor se ejecuta correctamente y la API responde en la IP pública:
+
+    **👉 http://146.181.44.7:8000/docs**
+
+
+## 👥 Autores
+
+ **Equipo G9-LATAM-Team-53**
